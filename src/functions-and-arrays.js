@@ -51,40 +51,23 @@ function sumNumbers(numeros) {
     return 0;
   }
 
-  for (i = 0; i < numeros.length; i++) {
-    if (numeros[i] === 0) {
-      return 0;
-    }
+    for (let i=0; i<numeros.length; i++){
+    cont += numeros[i]
   }
-
-  for (i = 0; i < numeros.length; i++) {
-    cont += numeros[i];
-    return cont;
-  }
-
-  for (i = 0; i < numeros.length; i++) {
-    cont += numeros[i];
-  }
-  return cont;
+  return cont
 }
 
 // Iteration #3.1 Bonus:
-function sum(soma) {
-  cont = ``;
-  if (!soma.length) {
+function sum(soma2) {
+    if (!soma2.length) {
     return 0;
   }
-
-  for (i = 0; i < soma.length; i++) {
-    if (soma[i] === 0) {
-      return 0;
-    }
+  cont2 = ``;
+  for (let i = 0; i < soma2.length; i++) {
+    cont2 += soma2[i]
   }
+  return cont2;
 
-  cont += soma[i];
-  for (i = 0; i < soma.length; i++) {
-    return cont;
-  }
 }
 
 // Iteration #4: Calculate the average
@@ -92,15 +75,22 @@ function sum(soma) {
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(media) {
+ //array empty
   if (!media.length){
     return null
   }
-  total=``
-  for (i=0; i<media.length; i++){
-    total += media[i]/i+1
-    return total
 
-  }
+  cont=``
+ /*  for (let i=0; i<media.length;i++){
+    cont += media[i]/media.length
+  }  
+  return cont/media.length*/
+
+  for (let i=0; i<media.length;i++){
+    cont += media[i]/media.length
+  }  
+  return cont/media.length
+
 
 }
 
