@@ -78,11 +78,10 @@ function averageNumbers(numbersAvg) {
     return null;
   }
   let cont3 = 0;
-    for (let i = 0; i < numbersAvg.length; i++) {
+  for (let i = 0; i < numbersAvg.length; i++) {
     cont3 += numbersAvg[i];
-    
   }
-  return cont3/numbersAvg.length;
+  return cont3 / numbersAvg.length;
 }
 
 // Level 2: Array of strings
@@ -99,7 +98,13 @@ const wordsArr = [
   "palace",
 ];
 
-function averageWordLength() {}
+function averageWordLength(wordsArr) {
+  if (!averageWordLength.length) {
+    return null;
+  }
+  let tamanho = [];
+  for (let i = 0; i < wordsArr.length; i++) {}
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -119,7 +124,20 @@ const wordsUnique = [
   "bring",
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  if (wordsUnique.length === 0) {
+    return null;
+  }
+
+  unique = "";
+  for (let i = 0; i < wordsUnique.length; i++) {
+    unique += wordsUnique.indexof([i]);
+
+    if (unique === 1) {
+      return wordsUnique[i];
+    }
+  }
+}
 
 // Iteration #6: Find elements
 const wordsFind = [
@@ -133,7 +151,21 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind) {
+  if (!wordsFind.length) {
+    return null;
+  }
+  let wordToSearch = ``;
+  for (let i = 0; i < wordsFind.length; i++) {
+    if (doesWordExist.slice([i]) === wordToSearch) {
+      return true;
+    }
+
+    if (doesWordExist.slice([i]) !== wordToSearch) {
+      return false;
+    }
+  }
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
