@@ -22,20 +22,20 @@ const words = [
   "crackpot",
 ];
 
-function findLongestWord(nome) {
+function findLongestWord(word) {
   let maiornome = ``;
-  if (!nome.length) {
+  if (!word.length) {
     return null;
   }
 
-  if (nome.length === 1) {
-    return nome[0];
+  if (word.length === 1) {
+    return word[0];
   }
 
-  if (nome.length > 1) {
-    for (let i = 0; i < nome.length; i++) {
-      if (nome[i].length > maiornome.length) {
-        maiornome = nome[i];
+  if (word.length > 1) {
+    for (let i = 0; i < word.length; i++) {
+      if (word[i].length > maiornome.length) {
+        maiornome = word[i];
       }
     }
     return maiornome;
@@ -45,54 +45,53 @@ function findLongestWord(nome) {
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(numeros) {
+function sumNumbers(numbers) {
   let cont = 0;
-  if (!numeros.length) {
+  if (!numbers.length) {
     return 0;
   }
 
-    for (let i=0; i<numeros.length; i++){
-    cont += numeros[i]
+  for (let i = 0; i < numbers.length; i++) {
+    cont += numbers[i];
   }
-  return cont
+  return cont;
 }
 
 // Iteration #3.1 Bonus:
-function sum(soma2) {
-    if (!soma2.length) {
+function sum(numbers) {
+  if (!numbers.length) {
     return 0;
   }
-  cont2 = ``;
-  for (let i = 0; i < soma2.length; i++) {
-    cont2 += soma2[i]
+  let cont2 = ``;
+  for (let i = 0; i < numbers.length; i++) {
+    cont2 += numbers[i];
   }
   return cont2;
-
 }
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers(media) {
- //array empty
-  if (!media.length){
-    return null
+function averageNumbers(numbersAvg) {
+  //array empty
+  if (!numbersAvg.length) {
+    return null;
   }
 
-  cont=``
- /*  for (let i=0; i<media.length;i++){
-    cont += media[i]/media.length
-  }  
-  return cont/media.length*/
-
-  for (let i=0; i<media.length;i++){
-    cont += media[i]/media.length
-  }  
-  return cont/media.length
-
-
+  let cont = 0;
+  let i = 0;
+  while (i < numbersAvg.length) {
+    cont += numbersAvg[i];
+  }
+  return cont / numbersAvg[i];
 }
+
+/*for (let i = 0; i < numbersAvg.length; i++) {
+    cont += numbersAvg[i] / numbersAvg.length;
+  }
+  return cont / numbersAvg.length;
+*/
 
 // Level 2: Array of strings
 const wordsArr = [
@@ -142,7 +141,12 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist() {
+  let wordToSearch = ``;
+  if (doesWordExist.slice() === wordToSearch) return true;
+
+  if (doesWordExist.slice() !== wordToSearch) return false;
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
